@@ -1,0 +1,305 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*header bagian logo*/
+.logo a {
+    float: left;
+    margin-top: 12px;
+    color: #000;
+    z-index: 1;
+}
+img.ya {
+    width: 220px;
+    height: 100px;
+    margin: auto;
+}
+
+/*header bagian menu*/
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: fixed;
+    position: -webkit-sticky; 
+    justify-content: space-between;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom:1.5px solid #364f6b;
+}
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #0D4C92;
+    font-weight: bolder;
+    padding: 0px 16px 0px 16px;
+}
+
+nav ul li a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    color: #FFC23C;
+}
+
+a.tbl-biru {
+    background: #FFC23C;
+    border-radius: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #0D4C92;
+    cursor: pointer;
+    
+}
+
+a.tbl-biru:hover {
+    text-decoration: none;
+    background: #0D4C92;
+    color: #FFC300;
+}
+
+section {
+    margin: auto;
+    display: flex;
+}
+
+.home {
+    font-family:'Times New Roman', Times, serif;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    color: #231955;
+    
+}
+
+.home img {
+    float: left;
+    width: 40%;
+    margin-left: 100px;
+    margin-top: 90px;
+}
+
+.home h1 {
+    font-size: 70px;
+}
+
+.home p {
+    font-weight: bold;
+    margin-top: 14%;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* Button Home */
+.buttons {
+    margin-left: 100px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+ 
+  .container {
+    font-weight: bolder;
+    background-color: #FFF;
+    padding:  0px 0px;
+    width: 240px;
+  }
+
+  .btn {
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  /*btn_background*/
+  .effect04 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    color: #231955;
+    outline: solid  2px #FFC300;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+  }
+ 
+  /* Our Company */
+.company {
+        font-family:'Times New Roman', Times, serif;
+        float: left;
+        font-size: 50px;
+        text-align: center;
+        color: #231955;
+        
+    }
+
+.company img{
+    float: right;
+    width: 40%;
+    margin-right: 80px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    padding-left: 100px;
+}
+.company p {
+    font-weight: bold;
+    font-size:30px;
+    margin-top: 150px;
+}
+
+.company h3 {
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+/* Bootstrap */
+.carousel-inner img {
+    margin-top: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+
+/* Contact Us */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *:focus,
+  *:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html,
+  body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+  }
+  
+  .wrapper {
+    display: inline-flex;
+    list-style: none;
+  }
+  
+  .wrapper img {
+    width: 25px;
+  }
+  .wrapper .icon {
+    position: relative;
+    background: #FFC300;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #ffffff;
+  }
+  
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background: #CD201F;
+    color: #ffffff;
+  }
+  
+
+
+/*footer*/
+#footer {
+    background-color: #fff;
+    color: #231955;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0px 50px 50px;
+    margin-top: 0px;
+}
